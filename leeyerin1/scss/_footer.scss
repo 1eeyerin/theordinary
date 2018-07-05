@@ -1,0 +1,110 @@
+//footer
+#footer {
+  overflow: hidden;
+  box-sizing: border-box;
+  border-top: 1px solid #e1e1e1;
+  background: #f8f8f8;
+  #foot-menu {
+    overflow: hidden;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e1e1e1;
+    .content {
+      overflow: hidden;
+      width: 1200px;
+      margin: 50px auto;
+      .site-num {
+        float: left;
+        box-sizing: border-box;
+        span {
+          display: block;
+          &.tel {
+            font: 25px 'Montserrat', sans-serif;
+            font-weight: 600;
+            margin-bottom: 10px;
+            &:before {
+              display: block;
+              width: 30px;
+              height: 3px;
+              margin-bottom: 10px;
+              content: '';
+              background: black;
+            }
+          }
+        }
+      }
+      nav {
+        float: right;
+        overflow: hidden;
+        box-sizing: border-box;
+        width: 600px;
+        ul {
+          float: right;
+          overflow: hidden;
+          text-align: right;
+          li {
+            float: left;
+            box-sizing: border-box;
+            width: 200px;
+            height: 60%;
+            h5 {
+              font: 14px 'Montserrat', sans-serif;
+              font-weight: 600;
+              margin-bottom: 10px;
+              text-transform: uppercase;
+            }
+            li a {
+              font-size: 14px;
+              &:focus,
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #copyright {
+    font-size: 12px;
+    overflow: hidden;
+    width: 1200px;
+    margin: 20px auto;
+    ul {
+      margin-bottom: 10px;
+      li {
+        display: inline-block;
+        a {
+          font-weight: bold;
+        }
+        &:first-child a:after {
+          display: inline-block;
+          width: 1px;
+          height: 10px;
+          margin: 0 10px;
+          content: '';
+          background: #bbb;
+        }
+      }
+    }
+    dl {
+      display: inline-block;
+      overflow: hidden;
+      margin-right: 10px;
+      dt,
+      dd {
+        display: inline-block;
+      }
+    }
+    span {
+      margin-left: 10px;
+    }
+    p {
+      font-weight: bold;
+      color: #444;
+    }
+  }
+  a:focus,
+  a:hover {
+    text-decoration: underline;
+  }
+}

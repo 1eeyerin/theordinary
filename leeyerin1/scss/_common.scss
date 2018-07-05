@@ -1,0 +1,158 @@
+//common
+#skip-nav {
+  font-size: 16px;
+  line-height: 40px;
+  position: fixed;
+  z-index: 100000;
+  top: -41px;
+  left: 0;
+  width: 100%;
+  transition: .4s;
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid #e0e0e0;
+  background: rgba(0, 0, 0, .6);
+  &:focus {
+    top: 0;
+  }
+}
+
+.section {
+  h1 {
+    margin-top: 20px;
+  }
+  .content {
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.section-banner {
+  font: 20px 'Montserrat', sans-serif;
+  font-weight: 500;
+  overflow: hidden;
+  transition: .6s;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background: rgba(167, 167, 167, .66);
+  &:hover {
+    background: rgba(95, 95, 95, .65);
+  }
+  .button-area {
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+
+.s-menu {
+  font: 16px 'Montserrat', sans-serif;
+  font-weight: 600;
+  word-spacing: 2px;
+  text-transform: uppercase;
+  color: #ce995c;
+}
+
+.m-menu {
+  font: 40px 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  color: #222;
+}
+
+.btn {
+  font: 14px 'Montserrat', sans-serif;
+  font-weight: 500;
+  display: block;
+  width: 90px;
+  padding: 10px 20px;
+  transition: .4s;
+  text-align: center;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #ce995c;
+  border: 2px solid #ce995c;
+  background: rgba(255, 255, 255, .8);
+}
+
+.btn-item {
+  width: 100px;
+  margin: 0 auto;
+  color: white;
+  border-color: white;
+  background: rgba(255, 255, 255, 0);
+  &:focus,
+  &:hover {
+    border-color: #ce995c;
+    background: #ce995c;
+  }
+}
+
+.top-banner-close {
+  position: absolute;
+  top: 120px;
+  right: 30px;
+  display: block;
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
+}
+
+.css-cancel {
+  position: relative;
+  display: block;
+  width: 2px;
+  height: 50px;
+  margin: 10px 0 0 33px;
+  transform: rotate(45deg);
+  background: white;
+  :before {
+    position: absolute;
+    top: 50%;
+    left: -23px;
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin-top: -2px;
+    content: '';
+    background: white;
+  }
+}
+
+span.text-indent {
+  display: inline-block;
+  text-indent: -999px;
+}
+
+#fix-box {
+  display: none;
+  overflow: hidden;
+  a.fix-scroll-btn {
+    position: fixed;
+    z-index: 10000;
+    right: 15px;
+    bottom: 103px;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    transition: .4s;
+    color: rgba(255, 255, 255, .9);
+    border-radius: 100px;
+    background: #777;
+    &:focus,
+    &:hover {
+      background: #ce995c;
+    }
+    &.down-btn {
+      bottom: 60px;
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

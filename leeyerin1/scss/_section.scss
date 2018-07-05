@@ -1,0 +1,398 @@
+//section01
+#section01 {
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 335px;
+  padding-top: 90px;
+  .content {
+    margin: 80px auto;
+    ul li {
+      display: inline-block;
+    }
+    .button-area {
+      margin-top: 20px;
+    }
+  }
+}
+
+//section02
+#section02 {
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 800px;
+  padding-top: 90px;
+  border-bottom: 1px solid #ebebeb;
+  background: white;
+  .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    article {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1200px;
+      height: 100%;
+      transform: translateX(-50%);
+      p {
+        margin-top: 30px;
+        color: #777;
+      }
+      img {
+        position: absolute;
+        z-index: -1;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+      }
+    }
+    .s-menu {
+      margin-top: 165px;
+    }
+    .btn-start {
+      margin-top: 70px;
+      &:focus,
+      &:hover {
+        color: white;
+        background: #ce995c;
+      }
+    }
+    .color-black {
+      img {
+        opacity: .9;
+      }
+      .m-menu {
+        color: white;
+      }
+      p {
+        color: #e0e0e0;
+      }
+      .btn-start {
+        color: #ce995c;
+        background: white;
+        &:focus,
+        &:hover {
+          color: white;
+          background: #ce995c;
+        }
+      }
+    }
+  }
+}
+
+//section03
+#section03 {
+  &.section {
+    overflow: hidden;
+    background: white;
+  }
+  .content {
+    margin-top: 140px;
+    ul {
+      overflow: hidden;
+      padding-top: 60px;
+      li {
+        position: relative;
+        float: left;
+        box-sizing: border-box;
+        width: 25%;
+        height: 450px;
+        overflow: hidden;
+        div {
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+        }
+        &.on div {
+          opacity: 1;
+        }
+        img {
+          position: relative;
+          top: 50%;
+          left: 50%;
+          overflow: hidden;
+          height: 100%;
+          transform: translate(-50%, -50%);
+        }
+        strong {
+          font: 14px 'Montserrat', sans-serif;
+          font-weight: 600;
+          display: block;
+          width: 80%;
+          margin: 130px auto 0;
+          text-align: left;
+          color: white;
+        }
+        p {
+          font-size: 13px;
+          font-weight: 400;
+          width: 80%;
+          margin: 50px auto 0;
+          text-align: left;
+          color: white;
+        }
+        .s-menu {
+          font-size: 17px;
+          font-weight: normal;
+          letter-spacing: 0;
+          color: #222;
+        }
+        .btn-item {
+          position: absolute;
+          bottom: 15%;
+          left: 10%;
+          &:focus,
+          &:hover {
+            color: white;
+            border-color: white;
+            background: rgba(255, 255, 255, .2);
+          }
+        }
+      }
+    }
+  }
+}
+
+//section04
+#section04 {
+  &.section {
+    overflow: hidden;
+    background: white;
+  }
+  .content {
+    margin: 140px auto;
+    >p {
+      margin-top: 30px;
+      margin-bottom: 50px;
+      color: #777;
+    }
+    ul {
+      overflow: hidden;
+      li {
+        position: relative;
+        float: left;
+        box-sizing: border-box;
+        width: 25%;
+        height: 450px;
+        img {
+          position: relative;
+          top: 50%;
+          left: 50%;
+          overflow: hidden;
+          height: 100%;
+          transform: translate(-50%, -50%);
+        }
+        div:not(.plus) {
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          float: left;
+          box-sizing: border-box;
+          width: 100%;
+          height: 100%;
+          padding: 20px;
+          opacity: 0;
+          background: white;
+        }
+        &:nth-child(2n-1)>div {
+          border: 1px solid black;
+        }
+        &:nth-child(2n) div {
+          color: white;
+          background: #777;
+        }
+        div {
+          img {
+            width: 100%;
+            opacity: .6;
+          }
+          h3 {
+            font: 20px 'Montserrat', sans-serif;
+            font-weight: 600;
+            display: block;
+            margin-top: 70px;
+          }
+          h5 {
+            font: 13px 'Montserrat', sans-serif;
+            font-weight: normal;
+            &.time {
+              font-size: 14px;
+              font-weight: 600;
+            }
+          }
+          .arrow-r {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            overflow: hidden;
+            width: 60px;
+            height: 30px;
+            span {
+              position: absolute;
+              display: block;
+              width: 100%;
+              height: 1px;
+              margin-top: 15px;
+              background: black;
+              &:nth-child(2) {
+                position: absolute;
+                top: -7px;
+                right: -3px;
+                width: 20px;
+                height: 1px;
+                transform: rotate(45deg);
+              }
+              &:nth-child(3) {
+                position: absolute;
+                right: -3px;
+                bottom: 7px;
+                width: 20px;
+                height: 1px;
+                transform: rotate(-45deg);
+              }
+            }
+          }
+          .plus {
+            position: relative;
+            overflow: hidden;
+            width: 15px;
+            height: 15px;
+            margin: 10px 0;
+            span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              display: block;
+              width: 100%;
+              height: 1px;
+              transform: translate(-50%, -50%);
+              background: black;
+              &:nth-child(2) {
+                transform: translate(-50%, -50%) rotate(90deg);
+              }
+            }
+          }
+          p {
+            font-size: 13px;
+            margin: 10px 0 20px;
+            &:after {
+              display: block;
+              width: 100%;
+              height: 1px;
+              margin: 50px 0 40px;
+              content: '';
+              background: #777;
+            }
+          }
+        }
+        &:nth-child(2n) div .arrow-r span {
+          background: white;
+        }
+        &:nth-child(2n) div .plus span {
+          background: white;
+        }
+        &:nth-child(2n) div p:after {
+          background: white;
+        }
+        &.on div {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+//section05
+#section05 {
+  padding: 120px 0 120px;
+  &.section-banner strong {
+    margin-top: 40px;
+    span {
+      font-weight: 600;
+      transition: .6s;
+    }
+  }
+  &:hover strong span {
+    transition: .6s;
+    letter-spacing: 8px;
+    &:after {
+      content: '.';
+      transition: content .6s;
+    }
+  }
+  h6 {
+    font: 14px 'Noto Sans KR', sans-serif;
+    font-weight: normal;
+    margin-top: 25px;
+    text-align: center;
+    color: white;
+  }
+}
+
+//section06
+#section06 {
+  &.section {
+    overflow: hidden;
+    box-sizing: border-box;
+    background: white;
+  }
+  .content {
+    margin: 140px auto;
+    h3 {
+      margin-bottom: 50px;
+    }
+    dl {
+      float: left;
+      overflow: hidden;
+      box-sizing: border-box;
+      width: 300px;
+      .s-menu {
+        font-size: 14px;
+        color: #222;
+      }
+      dd {
+        font-size: 14px;
+        margin-top: 15px;
+        color: #777;
+      }
+      a.ico {
+        display: block;
+        float: left;
+        width: 70px;
+        height: 70px;
+        transition: .4s;
+        border-radius: 100px;
+        background: #777;
+        &:focus,
+        &:hover {
+          background: #ce995c;
+        }
+        &:focus i,
+        &:hover i {
+          font-size: 35px;
+        }
+      }
+      a i {
+        font-size: 30px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transition: .1s;
+        transform: translate(-50%, -50%);
+        color: white;
+      }
+      .sns-wrap {
+        float: left;
+        box-sizing: border-box;
+        width: 230px;
+        padding: 0 15px;
+      }
+    }
+  }
+}
