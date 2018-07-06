@@ -472,6 +472,7 @@ span.text-indent {
 }
 
 #section01 {
+  display: none;
   overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -603,6 +604,9 @@ span.text-indent {
 
 #section03 .content ul li.on div {
   opacity: 1;
+  background: linear-gradient(-45deg, #ce995c, rgba(128, 128, 128, 0.74));
+  /* linear-gradient IE8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ce995c', EndColorStr='#a8a8a8')";
 }
 
 #section03 .content ul li img {

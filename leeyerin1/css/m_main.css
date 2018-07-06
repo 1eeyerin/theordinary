@@ -423,6 +423,7 @@ span.text-indent {
 }
 
 #section01 {
+  display: none;
   position: relative;
   overflow: hidden;
   -webkit-box-sizing: border-box;
@@ -454,7 +455,7 @@ span.text-indent {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 500px;
-  padding-top: 20px;
+  padding-top: 55px;
   border-bottom: 1px solid #ebebeb;
   background: white;
 }
@@ -466,8 +467,10 @@ span.text-indent {
 }
 
 #section02 .content li:nth-child(1) article img {
-  left: -30px;
-  opacity: 0.2;
+  left: 50%;
+  top: 70%;
+  height: 230px;
+  min-width: 0;
 }
 
 #section02 .content article {
@@ -500,7 +503,7 @@ span.text-indent {
 }
 
 #section02 .content .s-menu {
-  margin-top: 120px;
+  margin-top: 110px;
 }
 
 #section02 .content .btn-start {
@@ -562,7 +565,12 @@ span.text-indent {
           box-sizing: border-box;
   overflow: hidden;
   width: 50%;
+  display: none;
   height: 450px;
+}
+
+#section03 .content ul li:nth-of-type(1), #section03 .content ul li:nth-of-type(2) {
+  display: block;
 }
 
 #section03 .content ul li div {

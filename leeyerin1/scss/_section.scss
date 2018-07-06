@@ -1,5 +1,6 @@
 //section01
 #section01 {
+  display: none;
   overflow: hidden;
   box-sizing: border-box;
   height: 335px;
@@ -110,6 +111,9 @@
         }
         &.on div {
           opacity: 1;
+          background: linear-gradient(-45deg, rgb(206, 153, 92), rgba(128, 128, 128, 0.74));
+          /* linear-gradient IE8 */
+          -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ce995c', EndColorStr='#a8a8a8')";
         }
         img {
           position: relative;
