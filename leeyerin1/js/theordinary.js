@@ -5,25 +5,13 @@ $(document).ready(function() {
     e.preventDefault();
   });
   //ajax
-  //main-page
-  if ($('body').hasClass('main-page')) {
-    $.ajax({
-      url: 'include/header.html',
-      success: function(data) {
-        $('header').append(data);
-        gnbUI();
-      }
-    });
-  } else {
-    $.ajax({
-      url: 'include/sub_header.html',
-      success: function(data) {
-        $('header').append(data);
-        gnbUI();
-      }
-    });
-  }
-  //sub-page
+  $.ajax({
+    url: 'include/header.html',
+    success: function(data) {
+      $('header').append(data);
+      gnbUI();
+    }
+  });
   $.ajax({
     url: 'include/footer.html',
     success: function(data) {
@@ -31,7 +19,6 @@ $(document).ready(function() {
       fixbtn();
     }
   });
-  //close ajax
   //fix
   $(window).on('scroll', function() {
     if (700 < $(window).scrollTop()) {
@@ -61,7 +48,6 @@ $(document).ready(function() {
       }, 600);
     });
   }
-  //close fix
   //slide-menu
   function gnbUI() {
     var menu = $('#gnb > li > a');
@@ -80,16 +66,8 @@ $(document).ready(function() {
       $(header).toggleClass('m-open');
     });
   }
-  //close slide-menu
-  //banner-close
-  $('.top-banner-close').on('click', function(e) {
-    $('#section01').css({
-      'height': '0'
-    }, 500);
-  });
-  //close banner-close
   //image-slide
-  applyImageSlide('.img-slide:eq(0) .content', 1, 7000, 'play');
+  applyImageSlide('.img-slide:eq(0) .content', 1, 4000, 'play');
 
   function applyImageSlide(selector, first, speed, status) {
     var numSlide = $(selector).find('ul.slide li').length;
@@ -100,43 +78,38 @@ $(document).ready(function() {
     var timerId = '';
     var timerSpeed = speed;
     var timerStatus = status;
+    $(selector).find('ul.slide li').each(function(i){
+      $(selector).find('ul.indicator').append('<li><a href="#">'+ ( i + 1 ) +'번 비주얼</a></li>\n');
+    });
     showSlide(first);
     if (timerStatus === 'play') {
-      $(selector).find('p.control a.play i').attr({
-        'class': 'fa fa-pause'
-      });
+        $(this).find('span').empty().append('PAUSE');
     } else {
-      $(selector).find('p.control a.play i').attr({
-        'class': 'fa fa-play'
-      });
+        $(this).find('span').empty().append('PLAY');
     }
     $(selector).find('ul.indicator li a').on('click', function() {
       var index = $(selector).find('ul.indicator li').index($(this).parent());
       showSlide(index + 1);
     });
-    $(selector).find('p.control a.prev').on('click', function() {
+    $(selector).find('div.control a.prev').on('click', function() {
       showSlide(slidePrev);
     });
-    $(selector).find('p.control a.next').on('click', function() {
+    $(selector).find('div.control a.next').on('click', function() {
       showSlide(slideNext);
     });
-    $(selector).find('p.control a.play').on('click', function() {
+    $(selector).find('div.control a.play').on('click', function() {
       if (timerStatus === 'play') {
         clearTimeout(timerId);
         timerStatus = 'stop';
-        $(this).find('i').attr({
-          'class': 'fa fa-play'
-        });
+        $(this).find('span').empty().append('PLAY');
       } else {
         timerStatus = 'play';
         timerId = setTimeout(function() {
           showSlide(slideNext);
         }, timerSpeed);
-        $(this).find('i').attr({
-          'class': 'fa fa-pause'
-        });
+        $(this).find('span').empty().append('PAUSE');
       }
-    }); //play click close
+    });
     function showSlide(n) {
       if (slideNow === n || onPlaying === 1) return false;
       clearTimeout(timerId);
@@ -167,8 +140,7 @@ $(document).ready(function() {
       }
     }
   }
-  //close image-slide
-  //#section03,04 hover focus trigger
+  //#section02 hover focus trigger
   $('.trigger li div').on('mouseenter', function() {
     $(this).parent().addClass('on');
   }).on('mouseleave', function() {
@@ -181,5 +153,4 @@ $(document).ready(function() {
     if ($(this).parent().hasClass('fix-on')) return false;
     $(this).parent().removeClass('on');
   });
-  //close #section03 focus trigger
 });

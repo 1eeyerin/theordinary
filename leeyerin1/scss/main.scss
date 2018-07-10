@@ -11,6 +11,7 @@ body {
 @import 'section';
 @import 'footer';
 @import 'imgslide';
+
 @media screen and (max-width: 1220px) {
   #header #header-wrapper {
     min-width: 1024px;
@@ -20,7 +21,7 @@ body {
       margin-right: 20px;
     }
   }
-  #section02 .content article {
+  #section01 .content article {
     box-sizing: border-box;
     width: 100%;
     padding: 0 30px;
@@ -38,12 +39,12 @@ body {
       transition: .4s;
     }
   }
-  #section04 .content>p {
+  #section03 .content > p {
     margin: 0;
     padding: 30px 30px 50px;
     transition: .4s;
   }
-  #section06 .content dl {
+  #section05 .content dl {
     width: 25%;
     .sns-wrap {
       width: calc(100% - 70px);

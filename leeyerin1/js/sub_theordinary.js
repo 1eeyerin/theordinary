@@ -5,25 +5,13 @@ $(document).ready(function() {
     e.preventDefault();
   });
   //ajax
-  //main-page
-  if ($('body').hasClass('main-page')) {
-    $.ajax({
-      url: '../include/header.html',
-      success: function(data) {
-        $('header').append(data);
-        gnbUI();
-      }
-    });
-  } else {
-    $.ajax({
-      url: '../include/sub_header.html',
-      success: function(data) {
-        $('header').append(data);
-        gnbUI();
-      }
-    });
-  }
-  //sub-page
+  $.ajax({
+    url: '../include/sub_header.html',
+    success: function(data) {
+      $('header').append(data);
+      gnbUI();
+    }
+  });
   $.ajax({
     url: '../include/footer.html',
     success: function(data) {
@@ -31,7 +19,12 @@ $(document).ready(function() {
       fixbtn();
     }
   });
-  //close ajax
+  $.ajax({
+    url: '../include/error.html',
+    success: function(data) {
+      $('.content.error').append(data);
+    }
+  });
   //fix
   $(window).on('scroll', function() {
     if (700 < $(window).scrollTop()) {
@@ -45,7 +38,6 @@ $(document).ready(function() {
       $(header).removeClass('on');
     }
   });
-
   function fixbtn() {
     $('.top-btn').click(function() {
       $('html, body').animate({
@@ -60,7 +52,6 @@ $(document).ready(function() {
       }, 600);
     });
   }
-  //close fix
   //slide-menu
   function gnbUI() {
     var menu = $('#gnb > li > a');
@@ -79,16 +70,22 @@ $(document).ready(function() {
       $(header).toggleClass('m-open');
     });
   }
-  //close slide-menu
-  //login no-member tab menu
-  $('.tab-box li').on('click', function() {
+  //login tab menu
+  $('.tab li').on('click', function() {
     var tabId = $(this).attr('data-tab');
-    $('.tab-box li').removeClass('block');
+    $('.tab li').removeClass('block');
     $('.form-tab').removeClass('on');
     $(this).addClass('block');
     $("#" + tabId).addClass('on');
   });
-  //close login no-member tab menu
+  //login input
+  $('p.login').find('input').on('focusin', function() {
+    $(this).parent().find('label').addClass('on');
+  }).on('focusout', function() {
+    if ( $(this).val().length == 0 ) {
+      $(this).parent().find('label').removeClass('on');
+    }
+  });
   //faq tab menu
   $('.faq-menu li').on('click', function() {
     var tabId = $(this).attr('data-tab');
@@ -100,28 +97,27 @@ $(document).ready(function() {
   $('.faq-article label a').on('click', function() {
     $(this).parent().trigger('click');
   });
-  //close faq tab menu
-  //login input
-  $('.login-box').find('input').on('focusin', function() {
-    $(this).parent().find('.login-label').addClass('on');
-  }).on('focusout', function() {
-    if ($('.login-box').find('input').val() === '') {
-      $(this).parent().find('.login-label').removeClass('on');
-    }
-  });
-  //close login input
   //store img click focus function
   $('.store-img a').on('click', function() {
+    //now focus
     $('.store-img a').removeClass('current');
     $(this).addClass('current');
     var num = $(this).parent().find('img').attr('data-num');
     var subject = $(this).parent().parent().find('article').html();
-    $('#sub-page').append('<div class="overlay" tabIndex="0"><img src="../img/store-' + num + '.jpg" alt="매장 원본 이미지" />' + subject + '<a href="#">닫기</a></div>');
+    //overlay append
+    $('#sub-page').append('<div class="overlay" tabIndex="0"><img src="../img/store-' + num + '.jpg" alt="매장 원본 이미지" />' + subject + '<a href="#" class="pop-close">닫기</a><a href="#" class="return"></a></div>');
+    //overlay tabindex=0, focus
     $('.overlay').attr('tabindex', 0).focus();
+    //if overlay focus on -> close btn focus
     $('.overlay').on('focus', function() {
-      $(this).find('a').focus();
+      $(this).find('.pop-close').focus();
     });
-    $('.overlay a').on('click', function() {
+    //if return focus on -> close btn focus = infinite focus
+    $('.return').on('focus', function() {
+      $('.pop-close').focus();
+    });
+    //pop-close btn click -> div remove -> now focus move
+    $('.pop-close').on('click', function() {
       $(this).parent().remove();
       $('.current').focus();
     });
@@ -144,35 +140,42 @@ $(document).ready(function() {
       'opacity': 0
     });
   });
-  //close store img click focus function
-  //ul select button
-  $('.product-select').on('click', function() {
-    $('.product-select ul').toggle();
+  //vitamin select button
+  $('.vitamin .content > div').on('click', function() {
+    $('.vitamin .content > div ul').toggle();
     $(this).find('li').focus();
   });
-  $('.product-select').find('li').on('click', function() {
+  $('.vitamin .content > div').find('li').on('click', function() {
     var num = $(this).attr('data-desc');
     var text = $(this).text();
     $(this).parent().siblings('div').find('a').empty().append(text);
   });
-  $('.product-select').on('mouseleave', function() {
-    $('.product-select ul').hide();
+  $('.vitamin .content > div').on('mouseleave', function() {
+    $('.vitamin .content > div ul').hide();
   });
-  //close ul select button
-  //product order btn
-  $('.product-item').find('a').on('mouseenter', function() {
+  //vitamin order btn
+  $('.vit-product li').find('a').on('mouseenter', function() {
     var text = $(this).html();
-    $(this).empty().append('구매하기').css({'background':'#ce995c'});
-    $(this).on('mouseleave', function(){
-      $(this).empty().append(text).css({'background':'#777'});
+    $(this).empty().append('구매하기').css({
+      'background': '#ce995c'
+    });
+    $(this).on('mouseleave', function() {
+      $(this).empty().append(text).css({
+        'background': '#777'
+      });
     });
   });
-  $('.product-item').find('a').on('focusin', function() {
+  $('.vit-product li').find('a').on('focusin', function() {
     var text = $(this).html();
-    $(this).empty().append('구매하기').css({'background':'#ce995c'});
-    $(this).on('focusout', function(){
-      $(this).empty().append(text).css({'background':'#777'});
+    $(this).empty().append('구매하기').css({
+      'background': '#ce995c'
+    });
+    $(this).on('focusout', function() {
+      $(this).empty().append(text).css({
+        'background': '#777'
+      });
     });
   });
-  //close product order btn
+  //placeholder ie9 issue
+  $('input, textarea').placeholder();
 });

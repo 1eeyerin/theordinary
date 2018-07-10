@@ -1,72 +1,77 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="author" content="The Ordinary" />
-  <meta name="apple-mobile-web-app-title" content="디 오디너리" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/font-awesome.min.css" />
-  <link rel="stylesheet" href="../css/sub.css" />
-  <!-- origin file :: ../css/sub.css or ../scss/sub.scss -->
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script type="text/javascript" src="../js/sub_theordinary.js"></script>
-  <meta name="description" content="Clinical Formulations with Integrity." />
-  <title>통합검색 :: The Ordinary</title>
-</head>
-
-<body id="sub-page">
-  <div id="wrapper">
-    <a href="#main" id="skip-nav">본문 바로가기</a>
-    <!-- header include ajax -->
-    <header id="header">
-    </header>
-    <!-- /header -->
-    <!-- section01 -->
-    <section id="section01" class="section section01 section-banner">
-      <div class="content">
-        <h2>통합검색</h2>
-      </div>
-    </section>
-    <!-- /section01 -->
-    <!-- section02 -->
-    <section id="section02" class="section section02">
-      <div class="content">
-        <nav id="sub-info">
-          <ul>
-            <li><a href="../">홈</a></li>
-            <li><a href="#">통합검색</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <!-- /section02 -->
-    <!-- section03 -->
-    <section id="section03" class="section section03 search">
-      <div id="main" class="content">
-        <div class="search-box">
-          <input type="text" name="" id="" placeholder="검색어를 입력해주세요." /><span class="fa fa-search" aria-hidden="true" title="검색"></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="author" content="The Ordinary" />
+    <meta name="apple-mobile-web-app-title" content="디 오디너리" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/sub.min.css" media="screen and (min-width : 851px)" />
+    <!-- origin file :: ../css/sub.css or ../scss/sub.scss -->
+    <link rel="stylesheet" href="../css/m_sub.min.css" media="screen and (max-width : 850px)" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../js/sub_theordinary.js"></script>
+    <script type="text/javascript" src="../js/placeholder.min.js"></script>
+    <meta name="description" content="Clinical Formulations with Integrity." />
+    <title>통합검색 - The Ordinary</title>
+  </head>
+  <!-- 검색 페이지 **********************************
+    1. placeholder ie9 issue 크로스브라우징
+  ************************************************* -->
+  <body id="sub-page">
+    <div id="wrapper">
+      <a href="#main" id="skip-nav">본문 바로가기</a>
+      <!-- header include ajax -->
+      <header id="header">
+      </header>
+      <!-- /header -->
+      <!-- section01 -->
+      <section id="section01" class="section section01">
+        <div class="content">
+          <h2>통합검색</h2>
         </div>
-        <p>입력하신 검색어에 해당하는 결과가 없습니다.</p>
-        <ul class="search-no-box">
-          <li>단어의 철자가 정확한지 확인해 보세요.</li>
-          <li>한글을 영어로 혹은 영어를 한글로 입력했는지 확인해 보세요.</li>
-          <li>검색어의 단어 수를 줄이거나, 보다 일반적인 검색어로 다시 검색해 보세요.</li>
-          <li>두 단어 이상의 검색어인 경우, 띄어쓰기를 확인해 보세요.</li>
-          <li>검색 옵션을 변경해서 다시 검색해 보세요.</li>
-        </ul>
-      </div>
-    </section>
-    <!-- /section03 -->
-    <!-- footer include ajax -->
-    <footer id="footer">
-    </footer>
-    <!-- /footer -->
-  </div>
-</body>
+      </section>
+      <!-- /section01 -->
+      <!-- section02 -->
+      <section id="section02" class="section section02">
+        <div class="content">
+          <nav>
+            <ul>
+              <li><a href="../">홈</a></li>
+              <li><a href="#">통합검색</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- /section02 -->
+      <!-- section03 -->
+      <section id="section03" class="section section03 search">
+        <div id="main" class="content">
+          <div class="search-box">
+            <input type="text" id="search" placeholder="검색어를 입력해주세요." />
+            <span class="fa fa-search" aria-hidden="true" title="검색"></span>
+          </div>
+          <p>입력하신 검색어에 해당하는 결과가 없습니다.</p>
+          <ul>
+            <li>단어의 철자가 정확한지 확인해 보세요.</li>
+            <li>한글을 영어로 혹은 영어를 한글로 입력했는지 확인해 보세요.</li>
+            <li>검색어의 단어 수를 줄이거나, 보다 일반적인 검색어로 다시 검색해 보세요.</li>
+            <li>두 단어 이상의 검색어인 경우, 띄어쓰기를 확인해 보세요.</li>
+            <li>검색 옵션을 변경해서 다시 검색해 보세요.</li>
+          </ul>
+        </div>
+      </section>
+      <!-- /section03 -->
+      <!-- footer include ajax -->
+      <footer id="footer">
+      </footer>
+      <!-- /footer -->
+    </div>
+  </body>
 
 </html>

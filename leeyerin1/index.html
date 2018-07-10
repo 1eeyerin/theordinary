@@ -1,374 +1,348 @@
 ﻿<!DOCTYPE html>
 <html lang="ko">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="author" content="The Ordinary" />
-  <meta name="apple-mobile-web-app-title" content="디 오디너리" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600" rel="stylesheet" />
-  <link rel="stylesheet" href="css/font-awesome.min.css" />
-  <link rel="stylesheet" href="css/main.css" media="screen and (min-width : 851px)" />
-  <!-- origin file :: css/main.css or scss/main.scss -->
-  <link rel="stylesheet" href="css/m_main.css" media="screen and (max-width : 850px)" />
-  <!-- origin file :: css/m_main.css or scss/m_main.scss -->
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script type="text/javascript" src="js/theordinary.js"></script>
-  <meta name="description" content="Clinical Formulations with Integrity." />
-  <title>The Ordinary - Clinical Formulations with Integrity.</title>
-</head>
-
-<body class="main-page">
-  <div id="wrapper">
-    <a href="#main" id="skip-nav">본문 바로가기</a>
-    <!--<?php include 'include/header.html'; ?>-->
-    <!-- header include ajax -->
-    <header id="header">
-    </header>
-    <!-- /header -->
-    <!-- section01 -->
-    <section id="section01" class="section section01 section-banner">
-      <div class="content">
-        <ul>
-          <li>
-            <a href="#section02" title="메뉴 바로가기">New Releases /</a>
-          </li>
-          <li>
-            <a href="#section03" title="메뉴 바로가기"> best item /</a>
-          </li>
-          <li>
-            <a href="#section04" title="메뉴 바로가기"> REGIMEN GUIDE /</a>
-          </li>
-          <li>
-            <a href="#section05" title="메뉴 바로가기"> BRAND STORY /</a>
-          </li>
-          <li>
-            <a href="#section06" title="메뉴 바로가기"> CONNECT WITH US</a>
-          </li>
-        </ul>
-        <div class="button-area">
-          <a class="btn btn-item" href="#" target="_blank" title="데시엠 홈페이지로 이동(새창)">deciem.com</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="author" content="The Ordinary" />
+    <meta name="apple-mobile-web-app-title" content="디 오디너리" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" media="screen and (min-width : 851px)" />
+    <!-- origin file :: css/main.css or scss/main.scss -->
+    <link rel="stylesheet" href="css/m_main.min.css" media="screen and (max-width : 850px)" />
+    <!-- origin file :: css/m_main.css or scss/m_main.scss -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/theordinary.js"></script>
+    <meta name="description" content="Clinical Formulations with Integrity." />
+    <title>The Ordinary - Clinical Formulations with Integrity.</title>
+  </head>
+  <!-- 인덱스 메인 페이지 **********************************
+    1. 기존 홈페이지 theordinary.com 리뉴얼 창작 (개인작업)
+    2. Iphone X 화면 호환성을 위한 meta viewport-fit=cover 메타 태그 추가
+    3. scss를 이용한 스타일 작업
+    4. ajax를 이용하여 header footer를 include
+    5. 슬라이드 메뉴 구현 / 스크롤 발생시 고정헤더로 높이를 줄여 컨텐츠 가림 최소화
+    6. 슬라이드 이미지 display block, opacity로 fadein-out 전환 효과 / 인디케이터 li 갯수만큼 자동생성
+    7. max-width가 850 이하일때 모바일 반응형 지원
+    8. ie9 이상 지원
+    9. tab 접근성을 위한 모든 페이지에 본문 바로가기 btn 삽입
+  ************************************************* -->
+  <body class="main-page">
+    <div id="wrapper">
+      <a href="#main" id="skip-nav">본문 바로가기</a>
+      <!--<?php include 'include/header.html'; ?>-->
+      <!-- header include ajax -->
+      <header id="header">
+      </header>
+      <!-- /header -->
+      <!-- section01 -->
+      <section id="section01" class="section section01 img-slide">
+        <div id="main" class="content">
+          <ul class="slide">
+            <li class="color-black">
+              <article>
+                <img src="img/theordinary-item01.jpg" alt="Multi-Peptide Serum 제품 이미지" />
+                <h6 class="s-menu">Hair care</h6>
+                <h3 class="m-menu">Multi-Peptide Serum
+                  <br />for Hair Density</h3>
+                <p>머리카락 건강을 유지하도록 설계되어 있는 두피 관리 세럼
+                  <br />디오디너리 "멀티 펩타이드 세럼 for hair density"
+                  <br />모발을 두껍고 밀도가 높으면서 더 튼튼하도록 개선합니다
+                  <br />자기 전 몇 방울, 하루에 한 번씩 두피를 바르십시오.</p>
+                <div class="button-area">
+                  <a href="#" class="btn btn-start" title="제품 더보기">view more</a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article>
+                <img src="img/theordinary-item04.jpg" alt="Multi-Peptide Serum 제품 이미지" />
+                <h6 class="s-menu">Hair care</h6>
+                <h3 class="m-menu">Multi-Peptide Serum
+                  <br />for Hair Density</h3>
+                <p>머리카락 건강을 유지하도록 설계되어 있는 두피 관리 세럼
+                  <br />디오디너리 "멀티 펩타이드 세럼 for hair density"
+                  <br />모발을 두껍고 밀도가 높으면서 더 튼튼하도록 개선합니다
+                  <br />자기 전 몇 방울, 하루에 한 번씩 두피를 바르십시오.</p>
+                <div class="button-area">
+                  <a href="#" class="btn btn-start" title="제품 더보기">view more</a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article>
+                <img src="img/theordinary-item05.png" alt="sea-buckthorn fruit oil 제품 이미지" />
+                <h6 class="s-menu">New Releases</h6>
+                <h3 class="m-menu">100% organic virgin
+                  <br />sea-buckthorn fruit oil</h3>
+                <p>다양한 안티에이징 테크놀리지를 담은 수분 베이스 세럼,
+                  <br /> 디오디너리 "뷔페"
+                  <br /> 주름, 기미 등 여러 노화의 증상을 개선합니다.
+                  <br /> 아침과 저녁에 크림과 로션 전에 사용하세요.</p>
+                <div class="button-area">
+                  <a href="#" class="btn btn-start" title="제품 더보기">view more</a>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article>
+                <img src="img/theordinary-item03.jpg" alt="company 회사 이미지" />
+              </article>
+            </li>
+            <li>
+              <article>
+                <img src="img/theordinary-item02.jpg" alt="company 회사 이미지" />
+              </article>
+            </li>
+          </ul>
+          <ul class="indicator">
+            <!-- li indicator 샘플 코드
+            <li class="on">
+              <a href="#">
+                <span class="text-indent">1번 비주얼</span>
+              </a>
+            </li>
+            -->
+          </ul>
+          <div class="control">
+            <a href="#" class="prev">
+              <span class="prev-text"><img src="img/indicator-sprites.png" alt="" /></span>
+              <span>PREV</span>
+            </a>
+            <a href="#" class="next">
+              <span class="next-text">NEXT</span>
+              <span><img src="img/indicator-sprites.png" alt="" /></span>
+            </a>
+            <a href="#" class="play">
+              <span>PAUSE</span>
+            </a>
+          </div>
         </div>
-        <a href="#" class="top-banner-close" title="닫기">
-          <span class="css-cancel">
-            <span class="text-indent">닫기</span>
-          </span>
-        </a>
-      </div>
-    </section>
-    <!-- /section01 -->
-    <!-- section02 -->
-    <section id="section02" class="section section02 img-slide">
-      <div id="main" class="content">
-        <ul class="slide">
-          <li>
-            <article>
-              <img src="img/theordinary-item05.png" alt="sea-buckthorn fruit oil 제품 이미지" />
-              <h6 class="s-menu">New Releases</h6>
-              <h3 class="m-menu">100% organic virgin
-                <br />sea-buckthorn fruit oil</h3>
-              <p>다양한 안티에이징 테크놀리지를 담은 수분 베이스 세럼,
-                <br /> 디오디너리 "뷔페"
-                <br /> 주름, 기미 등 여러 노화의 증상을 개선합니다.
-                <br /> 아침과 저녁에 크림과 로션 전에 사용하세요.</p>
-              <a href="#" class="btn btn-start" title="제품 더보기">view more</a>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img src="img/theordinary-item04.jpg" alt="Multi-Peptide Serum 제품 이미지" />
-              <h6 class="s-menu">Hair care</h6>
-              <h3 class="m-menu">Multi-Peptide Serum
-                <br />for Hair Density</h3>
-              <p>머리카락 건강을 유지하도록 설계되어 있는 두피 관리 세럼
-                <br />디오디너리 "멀티 펩타이드 세럼 for hair density"
-                <br />모발을 두껍고 밀도가 높으면서 더 튼튼하도록 개선합니다
-                <br />자기 전 몇 방울, 하루에 한 번씩 두피를 바르십시오.</p>
-              <a href="#" class="btn btn-start" title="제품 더보기">view more</a>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img src="img/theordinary-item03.jpg" alt="company 회사 이미지" />
-            </article>
-          </li>
-          <li>
-            <article>
-              <img src="img/theordinary-item02.jpg" alt="company 회사 이미지" />
-            </article>
-          </li>
-          <li class="color-black">
-            <article>
-              <img src="img/theordinary-item01.jpg" alt="Multi-Peptide Serum 제품 이미지" />
-              <h6 class="s-menu">Hair care</h6>
-              <h3 class="m-menu">Multi-Peptide Serum
-                <br />for Hair Density</h3>
-              <p>머리카락 건강을 유지하도록 설계되어 있는 두피 관리 세럼
-                <br />디오디너리 "멀티 펩타이드 세럼 for hair density"
-                <br />모발을 두껍고 밀도가 높으면서 더 튼튼하도록 개선합니다
-                <br />자기 전 몇 방울, 하루에 한 번씩 두피를 바르십시오.</p>
-              <a href="#" class="btn btn-start" title="제품 더보기">view more</a>
-            </article>
-          </li>
-        </ul>
-        <ul class="indicator">
-          <li class="on">
-            <a href="#">
-              <span class="text-indent">1번 비주얼</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="text-indent">2번 비주얼</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="text-indent">3번 비주얼</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="text-indent">4번 비주얼</span>
-            </a>
-          </li>
-        </ul>
-        <p class="control">
-          <a href="#" class="prev">
-            <img src="img/btn-left.png" alt="이전이미지" />
-          </a>
-          <a href="#" class="next">
-            <img src="img/btn-right.png" alt="다음이미지" />
-          </a>
-          <a href="#" class="play">
-            <i class="fa fa-pause">
-            <span>자동넘김/정지버튼</span>
-            </i>
-          </a>
-        </p>
-      </div>
-    </section>
-    <!-- /section02 -->
-    <!-- section03 -->
-    <section id="section03" class="section section03 trigger">
-      <div class="content">
-        <h6 class="s-menu">Top Sellers</h6>
-        <h3 class="m-menu">Best Item</h3>
-        <ul>
-          <li class="on fix-on">
-            <img src="img/best-item01.jpg" alt="Niacinamide 10% + Zinc 1% 제품 이미지" />
-            <div>
-              <strong>Niacinamide 10% + Zinc 1%</strong>
-              <p>나이아시나마이드(비타민 B3)와 징크가 함유된 수분 베이스 세럼.
-                <br />여드름 상처를 옅게 하고, 늘어난 모공을 줄여주고, 유분기가 많은 피부를 개선합니다.</p>
-              <a href="#" class="btn btn-item" title="제품 더보기">view more</a>
-            </div>
-          </li>
-          <li>
-            <img src="img/best-item02.jpg" alt="The Ordinary Buffet 제품 이미지" />
-            <div>
-              <strong>The Ordinary “Buffet”</strong>
-              <p>다양한 안티에이징 테크놀리지를 담은 수분 베이스 세럼.
-                <br />기미 등 여러 노화의 증상을 개선합니다.</p>
-              <a href="#" class="btn btn-item" title="제품 더보기">view more</a>
-            </div>
-          </li>
-          <li>
-            <img src="img/best-item03.jpg" alt="Cold-Pressed Rose Hip Seed Oil 제품 이미지" />
-            <div>
-              <strong>100% Organic Cold-Pressed Rose Hip Seed Oil</strong>
-              <p>오일리하지 않는 로즈 힙 씨드에서 추출한 페이셜 오일.
-                <br />수분을 공급하고 피부에 광이 나게 합니다.</p>
-              <a href="#" class="btn btn-item" title="제품 더보기">view more</a>
-            </div>
-          </li>
-          <li>
-            <img src="img/best-item04.jpg" alt="Hyaluronic Acid 2% + B5 제품 이미지" />
-            <div>
-              <strong>Hyaluronic Acid 2% + B5</strong>
-              <p>히알루론산과 비타민 B5가 함유된 수분 베이스 세럼.
-                <br />수분을 공급하고 매끈하고 탄력있는 피부로 가꾸어 줍니다.</p>
-              <a href="#" class="btn btn-item" title="제품 더보기">view more</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- /section03 -->
-    <!-- section04 -->
-    <section id="section04" class="section section04 trigger">
-      <div class="content">
-        <h6 class="s-menu">Regimen Guide</h6>
-        <h3 class="m-menu">Example Regimens</h3>
-        <p>디 오디너리의 여러 제형을 단일 요법으로 결합하는 방법에 대한 제안을 제공합니다.
-          <br />피부 고민에 맞게 아래 예시를 데일리 루틴에 참고하세요.</p>
-        <ul>
-          <li>
-            <img src="img/best-item04.jpg" alt="Hyaluronic Acid 2% + B5 제품 이미지" />
-            <div>
-              <a href="#" class="arrow-r">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span class="text-indent" title="자세히">자세히</span>
-              </a>
-              <h3>look of blemishes</h3>
-              <h4>피부 흉터</h4>
-              <p>피부 흉터가 고민이라면?</p>
-              <h5 class="time">AM</h5>
-              <h5>Niacinamide 10% + Zinc 1%</h5>
-              <div class="plus" title="plus">
-                <span></span>
-                <span></span>
+      </section>
+      <!-- /section01 -->
+      <!-- section02 -->
+      <section id="section02" class="section section02 trigger">
+        <div class="content">
+          <h6 class="s-menu">Top Sellers</h6>
+          <h3 class="m-menu">Best Item</h3>
+          <div class="more-btn">
+            <a href="#" class="more-btn">모두보기</a>
+          </div>
+          <ul>
+            <li class="on fix-on">
+              <div>
+                <strong>Niacinamide 10% + Zinc 1%</strong>
+                <p>나이아시나마이드(비타민 B3)와 징크가 함유된 수분 베이스 세럼.
+                  <br />여드름 상처를 옅게 하고, 늘어난 모공을 줄여주고, 유분기가 많은 피부를 개선합니다.</p>
+                <a href="#" class="btn btn-item" title="제품 더보기">view more</a>
               </div>
-              <h5 class="time">PM</h5>
-              <h5>Salicylic Acid 2% Solution
-                <br />Niacinamide 10% + Zinc 1%</h5>
-            </div>
-          </li>
-          <li class="on fix-on">
-            <img src="img/best-item04.jpg" alt="Hyaluronic Acid 2% + B5 제품 이미지" />
-            <div>
-              <a href="#" class="arrow-r">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span class="text-indent" title="자세히">자세히</span>
-              </a>
-              <h3>dehydration</h3>
-              <h4>피부 건조</h4>
-              <p>건조한 피부를 개선시키고 싶다면?</p>
-              <h5 class="time">AM</h5>
-              <h5>Hyaluronic Acid 2% + B5
-                <br />Natural Moisturizing Factors + HA</h5>
-              <div class="plus" title="plus">
-                <span></span>
-                <span></span>
+            </li>
+            <li>
+              <div>
+                <strong>The Ordinary “Buffet”</strong>
+                <p>다양한 안티에이징 테크놀리지를 담은 수분 베이스 세럼.
+                  <br />기미 등 여러 노화의 증상을 개선합니다.</p>
+                <a href="#" class="btn btn-item" title="제품 더보기">view more</a>
               </div>
-              <h5 class="time">PM</h5>
-              <h5>Hyaluronic Acid 2% + B5
-                <br />100% Plant-Derived Squalane</h5>
-            </div>
-          </li>
-          <li>
-            <img src="img/best-item04.jpg" alt="Hyaluronic Acid 2% + B5 제품 이미지" />
-            <div>
-              <a href="#" class="arrow-r" title="자세히">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span class="text-indent">자세히</span>
-              </a>
-              <h3>pigmentation issues</h3>
-              <h4>피부 색소 침착</h4>
-              <p>피부 색소 침착을 개선하고 싶다면?</p>
-              <h5 class="time">AM</h5>
-              <h5>Alpha Arbutin 2% + HA
-                <br />Niacinamide 10% + Zinc 1%, Magnesium Ascorbyl Phosphate 10%</h5>
-              <div class="plus" title="plus">
-                <span></span>
-                <span></span>
+            </li>
+            <li>
+              <div>
+                <strong>100% Organic Cold-Pressed Rose Hip Seed Oil</strong>
+                <p>오일리하지 않는 로즈 힙 씨드에서 추출한 페이셜 오일.
+                  <br />수분을 공급하고 피부에 광이 나게 합니다.</p>
+                <a href="#" class="btn btn-item" title="제품 더보기">view more</a>
               </div>
-              <h5 class="time">PM</h5>
-              <h5>Alpha Arbutin 2% + HA
-                <br />Azelaic Acid Suspension 10%</h5>
-            </div>
-          </li>
-          <li>
-            <img src="img/best-item04.jpg" alt="Hyaluronic Acid 2% + B5 제품 이미지" />
-            <div>
-              <a href="#" class="arrow-r" title="자세히">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span class="text-indent">자세히</span>
-              </a>
-              <h3>textural irregularities</h3>
-              <h4>피부 요철</h4>
-              <p>피부 노화를 방지하고 싶다면?</p>
-              <h5 class="time">AM</h5>
-              <h5>Azelaic Acid Suspension 10%</h5>
-              <div class="plus" title="plus">
-                <span></span>
-                <span></span>
+            </li>
+            <li>
+              <div>
+                <strong>Hyaluronic Acid 2% + B5</strong>
+                <p>히알루론산과 비타민 B5가 함유된 수분 베이스 세럼.
+                  <br />수분을 공급하고 매끈하고 탄력있는 피부로 가꾸어 줍니다.</p>
+                <a href="#" class="btn btn-item" title="제품 더보기">view more</a>
               </div>
-              <h5 class="time">PM</h5>
-              <h5>Glycolic Acid 7% Toning Solution
-                <br />Granactive Retinoid 2% or 5% in Squalane</h5>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- /section04 -->
-    <!-- section05 -->
-    <section id="section05" class="section section05 section-banner">
-      <strong>Clinical Formulations
-        <br /><span>with Integrity</span></strong>
-      <h6>진정성 있는 임상스킨케어,
-        <b>디 오디너리</b>는<br />스킨케어에 가장 필요한 에센스만을 압축적으로 담아내
-          <br />즉각적인 피부 개선 효과를 경험하실 수 있습니다.</h6>
-      <div class="button-area">
-        <a class="btn btn-item" title="브랜드 소개 페이지로 이동" href="#">brand story</a>
-      </div>
-    </section>
-    <!-- /section05 -->
-    <!-- section06 -->
-    <section id="section06" class="section section06">
-      <div class="content">
-        <h6 class="s-menu">CONNECT WITH US</h6>
-        <h3 class="m-menu">Connect</h3>
-        <dl>
-          <a href="#" class="ico" target="_blank" title="인스타그램 사이트로 이동(새창)">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-            <span class="text-indent">instagram</span>
-          </a>
-          <article class="sns-wrap">
-            <dt class="s-menu">INSTAGRAM</dt>
-            <dd>데시엠의 제품들을 인스타그램으로 만나보세요.</dd>
-          </article>
-        </dl>
-        <dl>
-          <a href="#" class="ico" target="_blank" title="페이스북 사이트로 이동(새창)">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-            <span class="text-indent">facebook</span>
-          </a>
-          <article class="sns-wrap">
-            <dt class="s-menu">FACEBOOK</dt>
-            <dd>데시엠의 제품들을 페이스북으로 만나보세요.</dd>
-          </article>
-        </dl>
-        <dl>
-          <a href="#" class="ico" target="_blank" title="링크드인 사이트로 이동(새창)">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-            <span class="text-indent">linkedin</span>
-          </a>
-          <article class="sns-wrap">
-            <dt class="s-menu">LINKEDIN</dt>
-            <dd>최근 소식과 채용 정보를 실시간으로 알려줍니다.</dd>
-          </article>
-        </dl>
-        <dl>
-          <a href="#" class="ico" target="_blank" title="유튜브 사이트로 이동(새창)">
-            <i class="fa fa-youtube-play" aria-hidden="true"></i>
-            <span class="text-indent">youtube</span>
-          </a>
-          <article class="sns-wrap">
-            <dt class="s-menu">YOUTUBE</dt>
-            <dd>데시엠의 제품들을 유튜브로 즐기세요.</dd>
-          </article>
-        </dl>
-      </div>
-    </section>
-    <!-- /section06 -->
-    <!-- footer include ajax -->
-    <footer id="footer">
-    </footer>
-    <!-- /footer -->
-  </div>
-</body>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- /section02 -->
+      <!-- section03 -->
+      <section id="section03" class="section section03 trigger">
+        <div class="content">
+          <h6 class="s-menu">Regimen Guide</h6>
+          <h3 class="m-menu">Example Regimens</h3>
+          <p>디 오디너리의 여러 제형을 단일 요법으로 결합하는 방법에 대한 제안을 제공합니다.
+            <br />피부 고민에 맞게 아래 예시를 데일리 루틴에 참고하세요.</p>
+          <div class="more-btn">
+            <a href="#" class="more-btn">모두보기</a>
+          </div>
+          <ul>
+            <li>
+              <div>
+                <a href="#">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span class="text-indent" title="자세히">자세히</span>
+                </a>
+                <h3>look of blemishes</h3>
+                <h4>피부 흉터</h4>
+                <p>피부 흉터가 고민이라면?</p>
+                <h5 class="time">AM</h5>
+                <h5>Niacinamide 10% + Zinc 1%</h5>
+                <div class="plus" title="plus">
+                  <span></span>
+                  <span></span>
+                </div>
+                <h5 class="time">PM</h5>
+                <h5>Salicylic Acid 2% Solution
+                  <br />Niacinamide 10% + Zinc 1%</h5>
+              </div>
+            </li>
+            <li class="on fix-on">
+              <div>
+                <a href="#">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span class="text-indent" title="자세히">자세히</span>
+                </a>
+                <h3>dehydration</h3>
+                <h4>피부 건조</h4>
+                <p>건조한 피부를 개선시키고 싶다면?</p>
+                <h5 class="time">AM</h5>
+                <h5>Hyaluronic Acid 2% + B5
+                  <br />Natural Moisturizing Factors + HA</h5>
+                <div class="plus" title="plus">
+                  <span></span>
+                  <span></span>
+                </div>
+                <h5 class="time">PM</h5>
+                <h5>Hyaluronic Acid 2% + B5
+                  <br />100% Plant-Derived Squalane</h5>
+              </div>
+            </li>
+            <li>
+              <img src="img/best-item04.jpg" alt="Hyaluronic Acid 2% + B5 제품 이미지" />
+              <div>
+                <a href="#">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span class="text-indent" title="자세히">자세히</span>
+                </a>
+                <h3>pigmentation issues</h3>
+                <h4>피부 색소 침착</h4>
+                <p>피부 색소 침착을 개선하고 싶다면?</p>
+                <h5 class="time">AM</h5>
+                <h5>Alpha Arbutin 2% + HA
+                  <br />Niacinamide 10% + Zinc 1%, Magnesium Ascorbyl Phosphate 10%</h5>
+                <div class="plus" title="plus">
+                  <span></span>
+                  <span></span>
+                </div>
+                <h5 class="time">PM</h5>
+                <h5>Alpha Arbutin 2% + HA
+                  <br />Azelaic Acid Suspension 10%</h5>
+              </div>
+            </li>
+            <li>
+              <img src="img/best-item04.jpg" alt="Hyaluronic Acid 2% + B5 제품 이미지" />
+              <div>
+                <a href="#">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span class="text-indent" title="자세히">자세히</span>
+                </a>
+                <h3>textural irregularities</h3>
+                <h4>피부 요철</h4>
+                <p>피부 노화를 방지하고 싶다면?</p>
+                <h5 class="time">AM</h5>
+                <h5>Azelaic Acid Suspension 10%</h5>
+                <div class="plus" title="plus">
+                  <span></span>
+                  <span></span>
+                </div>
+                <h5 class="time">PM</h5>
+                <h5>Glycolic Acid 7% Toning Solution
+                  <br />Granactive Retinoid 2% or 5% in Squalane</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- /section03 -->
+      <!-- section04 -->
+      <section id="section04" class="section section04">
+        <div class="content">
+          <strong>Clinical Formulations
+          <br /><span>with Integrity</span></strong>
+          <h6>진정성 있는 임상스킨케어,
+            <b>디 오디너리</b>는<br />스킨케어에 가장 필요한 에센스만을 압축적으로 담아내
+            <br />즉각적인 피부 개선 효과를 경험하실 수 있습니다.</h6>
+          <div class="button-area">
+            <a class="btn btn-item" title="브랜드 소개 페이지로 이동" href="#">brand story</a>
+          </div>
+        </div>
+      </section>
+      <!-- /section04 -->
+      <!-- section05 -->
+      <section id="section05" class="section section05">
+        <div class="content">
+          <h6 class="s-menu">CONNECT WITH US</h6>
+          <h3 class="m-menu">Connect</h3>
+          <dl>
+            <a href="#" target="_blank" title="인스타그램 사이트로 이동(새창)">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <span class="text-indent">instagram</span>
+            </a>
+            <article class="sns-wrap">
+              <dt class="s-menu">INSTAGRAM</dt>
+              <dd>데시엠의 제품들을 인스타그램으로 만나보세요.</dd>
+            </article>
+          </dl>
+          <dl>
+            <a href="#" target="_blank" title="페이스북 사이트로 이동(새창)">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <span class="text-indent">facebook</span>
+            </a>
+            <article class="sns-wrap">
+              <dt class="s-menu">FACEBOOK</dt>
+              <dd>데시엠의 제품들을 페이스북으로 만나보세요.</dd>
+            </article>
+          </dl>
+          <dl>
+            <a href="#" target="_blank" title="링크드인 사이트로 이동(새창)">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <span class="text-indent">linkedin</span>
+            </a>
+            <article class="sns-wrap">
+              <dt class="s-menu">LINKEDIN</dt>
+              <dd>최근 소식과 채용 정보를 실시간으로 알려줍니다.</dd>
+            </article>
+          </dl>
+          <dl>
+            <a href="#" target="_blank" title="유튜브 사이트로 이동(새창)">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                <span class="text-indent">youtube</span>
+            </a>
+            <article class="sns-wrap">
+              <dt class="s-menu">YOUTUBE</dt>
+              <dd>데시엠의 제품들을 유튜브로 즐기세요.</dd>
+            </article>
+          </dl>
+        </div>
+      </section>
+      <!-- /section05 -->
+      <!-- footer include ajax -->
+      <footer id="footer">
+      </footer>
+      <!-- /footer -->
+    </div>
+  </body>
 
 </html>

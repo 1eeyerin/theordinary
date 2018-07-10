@@ -30,18 +30,15 @@
     margin: 0 auto;
     padding-top: 35px;
     transition: .4s;
-    .mobile-menu {
-      display: none;
-    }
   }
   &.on #header-wrapper {
     padding-top: 22px;
   }
   #logo-item {
-    font: 32px 'Open Sans', sans-serif;
+    font: 28px 'Open Sans', sans-serif;
     font-weight: 700;
     position: absolute;
-    top: 22px;
+    top: 26px;
     left: 50%;
     transition: .4s;
     transform: translate(-50%, 0);
@@ -76,6 +73,9 @@
             letter-spacing: 1px;
             color: #ce995c;
           }
+        }
+        &:last-child {
+          display: none;
         }
       }
       .sub {

@@ -1,128 +1,138 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="author" content="The Ordinary" />
-  <meta name="apple-mobile-web-app-title" content="디 오디너리" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/font-awesome.min.css" />
-  <link rel="stylesheet" href="../css/sub.css" />
-  <!-- origin file :: ../css/sub.css or ../scss/sub.scss -->
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script type="text/javascript" src="../js/sub_theordinary.js"></script>
-  <meta name="description" content="Clinical Formulations with Integrity." />
-  <title>매장안내 :: The Ordinary</title>
-</head>
-<!-- 매장안내 페이지 --------------------------------------------------------------
-  1. 이미지 상세보기 레이어 팝업
-  2. 팝업창 이동 후 다시 원래 있던 포커스부터 이동 시작
------------------------------------------------------------------------------- -->
-<body id="sub-page">
-<div id="wrapper">
-  <a href="#main" id="skip-nav">본문 바로가기</a>
-  <!-- header include ajax -->
-  <header id="header">
-  </header>
-  <!-- /header -->
-  <!-- section01 -->
-  <section id="section01" class="section section01 section-banner">
-    <div class="content">
-      <h2>매장안내</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="author" content="The Ordinary" />
+    <meta name="apple-mobile-web-app-title" content="디 오디너리" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/sub.min.css" media="screen and (min-width : 851px)" />
+    <!-- origin file :: ../css/sub.css or ../scss/sub.scss -->
+    <link rel="stylesheet" href="../css/m_sub.min.css" media="screen and (max-width : 850px)" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../js/sub_theordinary.js"></script>
+    <meta name="description" content="Clinical Formulations with Integrity." />
+    <title>매장안내 - The Ordinary</title>
+  </head>
+  <!-- 매장안내 페이지 **********************************
+    1. 이미지 상세보기 레이어 팝업
+    2. 레이어 팝업 안에서는 close btn을 누르기 전까지 포커스가 팝업 밖으로 빠져나가지 않음
+    2. 팝업창 닫은 후에는 다시 원래 있던 포커스부터 이동 시작
+  ************************************************* -->
+  <body id="sub-page">
+    <div id="wrapper">
+      <a href="#main" id="skip-nav">본문 바로가기</a>
+      <!-- header include ajax -->
+      <header id="header">
+      </header>
+      <!-- /header -->
+      <!-- section01 -->
+      <section id="section01" class="section section01">
+        <div class="content">
+          <h2>매장안내</h2>
+        </div>
+      </section>
+      <!-- /section01 -->
+      <!-- section02 -->
+      <section id="section02" class="section section02">
+        <div class="content">
+          <nav>
+            <ul>
+              <li><a href="../">홈</a></li>
+              <li><a href="#">매장안내</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- /section02 -->
+      <!-- section03 -->
+      <section id="section03" class="section section03 store">
+        <div id="main" class="content">
+          <h3 class="m-menu">Find Store</h3>
+          <h6>데시엠 오프라인 매장안내</h6>
+          <div class="select-box">
+            <h5>전체 매장</h5>
+            <select>
+              <option>All</option>
+              <option>South Korea</option>
+              <option>Canada</option>
+              <option>United Kingdom</option>
+              <option>USA</option>
+              <option>Australia</option>
+              <option>Mexico</option>
+            </select>
+          </div>
+          <ul>
+            <li>
+              <div class="store-img">
+                <a href="#">
+                  <span class="fa fa-window-restore" aria-hidden="true"></span>자세히</a><img src="../img/store-img01.jpg" data-num="img01" alt="신사 매장 이미지" /></div>
+              <article>
+                <h5>Seoul</h5>
+                <span class="fa fa-map-marker" aria-hidden="true" title="매장위치"></span>
+                <p>34-4 Apgujeong-ro 12-gil,<br />Gangnam-gu, 1st Floor<br />Seoul, 06028<br />South Korea</p>
+                <h6>TELEPHONE</h6>
+                <p>+82 704 784 4012</p>
+                <h6>HOURS</h6>
+                <p>Sun - Sat: 12:00pm - 9:00pm</p>
+              </article>
+            </li>
+            <li>
+              <div class="store-img">
+                <a href="#">
+                  <span class="fa fa-window-restore" aria-hidden="true"></span>자세히</a><img src="../img/store-img02.jpg" data-num="img02" alt="Toronto Queen West 매장 이미지" /></div>
+              <article>
+                <h5>Toronto Queen West</h5>
+                <span class="fa fa-map-marker" aria-hidden="true" title="매장위치"></span>
+                <p>881 Queen St. W.<br />Toronto, Ontario M6J 1G5<br />Canada</p>
+                <h6>TELEPHONE</h6>
+                <p>+1 647 560 4181</p>
+                <h6>HOURS</h6>
+                <p>Tue - Sat: 11:00am - 7:00pm<br />Sun - Mon: 12:00pm - 6:00pm</p>
+              </article>
+            </li>
+            <li>
+              <div class="store-img">
+                <a href="#">
+                  <span class="fa fa-window-restore" aria-hidden="true"></span>자세히</a><img src="../img/store-img03.jpg" data-num="img03" alt="Toronto Exchange Tower 매장 이미지" /></div>
+              <article>
+                <h5>Toronto Exchange Tower</h5>
+                <span class="fa fa-map-marker" aria-hidden="true" title="매장위치"></span>
+                <p>130 King St W<br />Concourse Level, Unit 18<br />Toronto, Ontario M5X 1C9<br />Canada</p>
+                <h6>TELEPHONE</h6>
+                <p>+1 647 558 0656</p>
+                <h6>HOURS</h6>
+                <p>Mon - Fri: 8:00am - 6:00pm</p>
+              </article>
+            </li>
+            <li>
+              <div class="store-img">
+                <a href="#">
+                  <span class="fa fa-window-restore" aria-hidden="true"></span>자세히</a><img src="../img/store-img04.jpg" data-num="img04" alt="Toronto Cabbagetown 매장 이미지" /></div>
+              <article>
+                <h5>Toronto Cabbagetown</h5>
+                <span class="fa fa-map-marker" aria-hidden="true" title="매장위치"></span>
+                <p>242 Carlton St.<br />Toronto, Ontario M5A 2L1<br />Canada</p>
+                <h6>TELEPHONE</h6>
+                <p>+1 647 361 4393</p>
+                <h6>HOURS</h6>
+                <p>Mon - Sat: 11:00am - 6:00pm</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- /section03 -->
+      <!-- footer include ajax -->
+      <footer id="footer">
+      </footer>
+      <!-- /footer -->
     </div>
-  </section>
-  <!-- /section01 -->
-  <!-- section02 -->
-  <section id="section02" class="section section02">
-    <div class="content">
-      <nav id="sub-info">
-        <ul>
-          <li><a href="../">홈</a></li>
-          <li><a href="#">매장안내</a></li>
-        </ul>
-      </nav>
-    </div>
-  </section>
-  <!-- /section02 -->
-  <!-- section03 -->
-  <section id="section03" class="section section03 store">
-    <div id="main" class="content">
-      <h3 class="m-menu">Find Store</h3>
-      <h6>데시엠 오프라인 매장안내</h6>
-      <div class="select-box">
-        <h5>전체 매장</h5>
-        <select class="nation-box">
-          <option>All</option>
-          <option>South Korea</option>
-          <option>Canada</option>
-          <option>United Kingdom</option>
-          <option>USA</option>
-          <option>Australia</option>
-          <option>Mexico</option>
-        </select>
-      </div>
-      <ul>
-        <li>
-          <div class="store-img"><a href="#"><span class="fa fa-window-restore" aria-hidden="true"></span>자세히</a><img src="../img/store-img01.jpg" data-num="img01" alt="신사 매장 이미지" /></div>
-          <article>
-            <h5>Seoul</h5>
-            <span class="fa fa-map-marker" aria-hidden="true" title="매장위치"></span>
-            <p>34-4 Apgujeong-ro 12-gil,<br />Gangnam-gu, 1st Floor<br />Seoul, 06028<br />South Korea</p>
-            <h6>TELEPHONE</h6>
-            <p>+82 704 784 4012</p>
-            <h6>HOURS</h6>
-            <p>Sun - Sat: 12:00pm - 9:00pm</p>
-          </article>
-        </li>
-        <li>
-          <div class="store-img"><a href="#"><span class="fa fa-window-restore" aria-hidden="true"></span>자세히</a><img src="../img/store-img02.jpg" data-num="img02" alt="Toronto Queen West 매장 이미지" /></div>
-          <article>
-            <h5>Toronto Queen West</h5>
-            <span class="fa fa-map-marker" aria-hidden="true" title="매장위치"></span>
-            <p>881 Queen St. W.<br />Toronto, Ontario M6J 1G5<br />Canada</p>
-            <h6>TELEPHONE</h6>
-            <p>+1 647 560 4181</p>
-            <h6>HOURS</h6>
-            <p>Tue - Sat: 11:00am - 7:00pm<br />Sun - Mon: 12:00pm - 6:00pm</p>
-          </article>
-        </li>
-        <li>
-          <div class="store-img"><a href="#"><span class="fa fa-window-restore" aria-hidden="true"></span>자세히</a><img src="../img/store-img03.jpg" data-num="img03" alt="Toronto Exchange Tower 매장 이미지" /></div>
-          <article>
-            <h5>Toronto Exchange Tower</h5>
-            <span class="fa fa-map-marker" aria-hidden="true" title="매장위치"></span>
-            <p>130 King St W<br />Concourse Level, Unit 18<br />Toronto, Ontario M5X 1C9<br />Canada</p>
-            <h6>TELEPHONE</h6>
-            <p>+1 647 558 0656</p>
-            <h6>HOURS</h6>
-            <p>Mon - Fri: 8:00am - 6:00pm</p>
-          </article>
-        </li>
-        <li>
-          <div class="store-img"><a href="#"><span class="fa fa-window-restore" aria-hidden="true"></span>자세히</a><img src="../img/store-img04.jpg" data-num="img04" alt="Toronto Cabbagetown 매장 이미지" /></div>
-          <article>
-            <h5>Toronto Cabbagetown</h5>
-            <span class="fa fa-map-marker" aria-hidden="true" title="매장위치"></span>
-            <p>242 Carlton St.<br />Toronto, Ontario M5A 2L1<br />Canada</p>
-            <h6>TELEPHONE</h6>
-            <p>+1 647 361 4393</p>
-            <h6>HOURS</h6>
-            <p>Mon - Sat: 11:00am - 6:00pm</p>
-          </article>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- /section03 -->
-  <!-- footer include ajax -->
-  <footer id="footer">
-  </footer>
-  <!-- /footer -->
-</div>
-</body>
+  </body>
 
 </html>
