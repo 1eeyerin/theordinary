@@ -1170,7 +1170,7 @@ span.text-indent
     background: transparent url(../img/arrow_down.png) no-repeat center;
 }
 
-#section03.faq .faq-article article
+#section03.faq .faq-article li div
 {
     overflow: hidden;
 
@@ -1184,7 +1184,7 @@ span.text-indent
     display: none;
 }
 
-#section03.faq .faq-article input:checked ~ article
+#section03.faq .faq-article input:checked ~ div
 {
     font-size: 14px;
     line-height: 1.5;

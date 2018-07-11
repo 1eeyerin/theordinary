@@ -135,9 +135,9 @@ p{color:#777}
 #section03.faq .faq-article label.order:before{content:'[결제]'}
 #section03.faq .faq-article label.delivery:before{content:'[배송]'}
 #section03.faq .faq-article label:after{position:absolute;top:22px;right:20px;width:20px;height:20px;content:'';background:transparent url(../img/arrow_down.png) no-repeat center}
-#section03.faq .faq-article article{overflow:hidden;height:0;background:#efefef}
+#section03.faq .faq-article li div{overflow:hidden;height:0;background:#efefef}
 #section03.faq .faq-article input{display:none}
-#section03.faq .faq-article input:checked~article{font-size:14px;line-height:1.5;height:100%;padding:30px 50px;color:#444}
+#section03.faq .faq-article input:checked~div{font-size:14px;line-height:1.5;height:100%;padding:30px 50px;color:#444}
 #section03.faq .faq-article input:checked+label:hover:after{background:transparent url(../img/arrow_up.png) no-repeat center}
 #section03.join .content,#section03.login .content{text-align:center}
 #section03.join .content h3,#section03.login .content h3{margin:25px auto}

@@ -332,14 +332,14 @@
         background: transparent url(../img/arrow_down.png) no-repeat center;
       }
     }
-    article {
+    li div {
       height: 0;
       overflow: hidden;
       background: #efefef;
     }
     input {
       display: none;
-      &:checked~article {
+      &:checked~div {
         height: 100%;
         padding: 30px 50px;
         color: #444;
