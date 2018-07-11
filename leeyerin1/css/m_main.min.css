@@ -166,7 +166,7 @@ p{color:#777}
 #footer #copyright ul li{display:inline-block}
 #footer #copyright ul li a{font-weight:700}
 #footer #copyright ul li:first-child a:after{display:inline-block;width:1px;height:10px;margin:0 10px;content:'';background:#bbb}
-#footer #copyright dl{display:iblock;overflow:hidden;text-align:center}
+#footer #copyright dl{overflow:hidden;text-align:center}
 #footer #copyright dl dd,#footer #copyright dl dt{display:inline-block}
 #footer #copyright span{margin-left:10px}
 #footer #copyright p{font-weight:700;margin:20px 0;text-align:center;color:#444}

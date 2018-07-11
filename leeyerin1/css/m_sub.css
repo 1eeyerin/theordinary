@@ -2251,7 +2251,6 @@ p
 
 #footer #copyright dl
 {
-    display: iblock;
     overflow: hidden;
 
     text-align: center;
