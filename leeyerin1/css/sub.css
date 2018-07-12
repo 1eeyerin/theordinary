@@ -739,7 +739,7 @@ span.text-indent
     margin: 50px auto 100px;
 }
 
-#section03.company .content > div
+#section03.company .founder-wrap
 {
     position: relative;
 
@@ -750,7 +750,7 @@ span.text-indent
     height: 500px;
 }
 
-#section03.company .content > div img
+#section03.company .founder-wrap img
 {
     position: relative;
 
@@ -774,7 +774,7 @@ span.text-indent
     background: white;
 }
 
-#section03.company article
+#section03.company .company-wrap
 {
     overflow: hidden;
 
@@ -783,7 +783,7 @@ span.text-indent
     margin-top: 50px;
 }
 
-#section03.company article div
+#section03.company .company-wrap .company-img
 {
     float: left;
     overflow: hidden;
@@ -792,13 +792,13 @@ span.text-indent
     height: 100%;
 }
 
-#section03.company article div img
+#section03.company .company-wrap .company-img img
 {
     max-width: 100%;
     min-height: 100%;
 }
 
-#section03.company article p
+#section03.company .company-wrap p
 {
     font-size: 16px;
 
@@ -817,7 +817,7 @@ span.text-indent
     background: white;
 }
 
-#section03.company article p:before
+#section03.company .company-wrap p:before
 {
     display: inline-block;
 
@@ -827,7 +827,7 @@ span.text-indent
     content: '';
 }
 
-#section03.company article p span
+#section03.company .company-wrap p span
 {
     font-family: serif;
     font-size: 25px;
@@ -839,7 +839,7 @@ span.text-indent
     color: black;
 }
 
-#section03.company article p strong
+#section03.company .company-wrap p strong
 {
     text-decoration: underline;
 }

@@ -755,7 +755,7 @@ p
     margin: 50px auto;
 }
 
-#section03.company .content > div
+#section03.company .founder-wrap
 {
     position: relative;
 
@@ -766,7 +766,7 @@ p
     height: 230px;
 }
 
-#section03.company .content > div img
+#section03.company .founder-wrap img
 {
     position: relative;
 
@@ -793,24 +793,24 @@ p
     background: white;
 }
 
-#section03.company article
+#section03.company .company-wrap
 {
     overflow: hidden;
 
     width: 100%;
 }
 
-#section03.company article:first-of-type
+#section03.company .company-wrap:first-of-type
 {
     margin-top: 50px;
 }
 
-#section03.company article:first-of-type p
+#section03.company .company-wrap:first-of-type p
 {
     padding-bottom: 0;
 }
 
-#section03.company article div
+#section03.company .company-wrap .company-img
 {
     overflow: hidden;
 
@@ -818,7 +818,7 @@ p
             box-sizing: border-box;
 }
 
-#section03.company article div img
+#section03.company .company-wrap .company-img img
 {
     overflow: hidden;
 
@@ -826,7 +826,7 @@ p
     min-height: 200px;
 }
 
-#section03.company article p
+#section03.company .company-wrap p
 {
     font-size: 13px;
 
@@ -842,7 +842,7 @@ p
     background: white;
 }
 
-#section03.company article p:before
+#section03.company .company-wrap p:before
 {
     display: inline-block;
 
@@ -852,7 +852,7 @@ p
     content: '';
 }
 
-#section03.company article p span
+#section03.company .company-wrap p span
 {
     font-family: serif;
     font-size: 25px;
@@ -864,7 +864,7 @@ p
     color: black;
 }
 
-#section03.company article p strong
+#section03.company .company-wrap p strong
 {
     text-decoration: underline;
 }

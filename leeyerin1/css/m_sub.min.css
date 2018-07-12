@@ -90,18 +90,18 @@ p{color:#777}
 #section02 .content li+li:before{font-family:FontAwesome;font-size:13px;display:inline-block;padding:0 5px;content:'\f105'}
 #section03{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0 20px}
 #section03 .content{margin:50px auto}
-#section03.company .content>div{position:relative;overflow:hidden;-webkit-box-sizing:border-box;box-sizing:border-box;height:230px}
-#section03.company .content>div img{position:relative;overflow:hidden;width:100%}
+#section03.company .founder-wrap{position:relative;overflow:hidden;-webkit-box-sizing:border-box;box-sizing:border-box;height:230px}
+#section03.company .founder-wrap img{position:relative;overflow:hidden;width:100%}
 #section03.company .founder-text{position:absolute;top:50px;left:50%;-webkit-box-sizing:border-box;box-sizing:border-box;width:80%;padding:20px;-webkit-transform:translate(-50%,0);transform:translate(-50%,0);text-align:center;background:#fff}
-#section03.company article{overflow:hidden;width:100%}
-#section03.company article:first-of-type{margin-top:50px}
-#section03.company article:first-of-type p{padding-bottom:0}
-#section03.company article div{overflow:hidden;-webkit-box-sizing:border-box;box-sizing:border-box}
-#section03.company article div img{overflow:hidden;width:100%;min-height:200px}
-#section03.company article p{font-size:13px;overflow:hidden;-webkit-box-sizing:border-box;box-sizing:border-box;padding:20px 0;text-align:justify;vertical-align:bottom;background:#fff}
-#section03.company article p:before{display:inline-block;margin-right:5px;padding-right:10px;content:''}
-#section03.company article p span{font-family:serif;font-size:25px;margin:5px;text-decoration:underline;color:#000}
-#section03.company article p strong{text-decoration:underline}
+#section03.company .company-wrap{overflow:hidden;width:100%}
+#section03.company .company-wrap:first-of-type{margin-top:50px}
+#section03.company .company-wrap:first-of-type p{padding-bottom:0}
+#section03.company .company-wrap .company-img{overflow:hidden;-webkit-box-sizing:border-box;box-sizing:border-box}
+#section03.company .company-wrap .company-img img{overflow:hidden;width:100%;min-height:200px}
+#section03.company .company-wrap p{font-size:13px;overflow:hidden;-webkit-box-sizing:border-box;box-sizing:border-box;padding:20px 0;text-align:justify;vertical-align:bottom;background:#fff}
+#section03.company .company-wrap p:before{display:inline-block;margin-right:5px;padding-right:10px;content:''}
+#section03.company .company-wrap p span{font-family:serif;font-size:25px;margin:5px;text-decoration:underline;color:#000}
+#section03.company .company-wrap p strong{text-decoration:underline}
 #section03.vitamin{padding:0 10px}
 #section03.vitamin .content{text-align:center}
 #section03.vitamin .content>div{position:relative;display:inline-block;text-align:left}
