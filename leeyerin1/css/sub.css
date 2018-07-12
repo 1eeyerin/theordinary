@@ -1745,9 +1745,10 @@ span.text-indent
     vertical-align: middle;
 }
 
-#section03.search p
+#section03.search h3
 {
     font-size: 30px;
+    font-weight: normal;
 
     margin: 100px 0 0;
 

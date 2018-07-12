@@ -1759,9 +1759,10 @@ p
     vertical-align: middle;
 }
 
-#section03.search p
+#section03.search h3
 {
     font-size: 20px;
+    font-weight: normal;
 
     margin: 60px 0 0;
 
