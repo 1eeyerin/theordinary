@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset 'UTF-8';
 body{font:15px 'Open Sans','Noto Sans KR','맑은 고딕',sans-serif;background:url(../img/body-bg.jpg) no-repeat center bottom fixed;background-size:cover}
 body{margin:0}
 article,aside,footer,header,nav,section{display:block}
@@ -147,6 +147,9 @@ p{color:#777}
 #section05 li .icon-wrap{float:left;overflow:hidden}
 #section05 li .sns-wrap{float:left;-webkit-box-sizing:border-box;box-sizing:border-box;width:230px;padding:0 15px}
 #section05 li .sns-wrap .s-menu{font-size:14px;color:#222}
+.section .content.scroll{-webkit-transform:translate(-100px,0);transform:translate(-100px,0);opacity:.3}
+.section .content.scroll.on{-webkit-transition:1.8s;transition:1.8s;-webkit-transform:translate(0,0);transform:translate(0,0);opacity:1}
+.section02 .content.scroll{-webkit-transform:translate(100px,0);transform:translate(100px,0)}
 #footer{overflow:hidden;-webkit-box-sizing:border-box;box-sizing:border-box;border-top:1px solid #e1e1e1;background:#f4f4f4}
 #footer #foot-menu{overflow:hidden;-webkit-box-sizing:border-box;box-sizing:border-box;border-bottom:1px solid #e1e1e1}
 #footer #foot-menu .content{overflow:hidden;width:1200px;margin:50px auto}

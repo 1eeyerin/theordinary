@@ -401,3 +401,16 @@ p {
     }
   }
 }
+//content common scroll
+.section .content.scroll {
+  transform: translate(-100px, 0);
+  opacity: .3;
+  &.on {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: 1.8s;
+  }
+}
+.section02 .content.scroll {
+  transform: translate(100px, 0);
+}

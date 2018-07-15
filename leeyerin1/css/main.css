@@ -937,6 +937,25 @@ p {
   color: #222;
 }
 
+.section .content.scroll {
+  -webkit-transform: translate(-100px, 0);
+          transform: translate(-100px, 0);
+  opacity: .3;
+}
+
+.section .content.scroll.on {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+  -webkit-transition: 1.8s;
+  transition: 1.8s;
+}
+
+.section02 .content.scroll {
+  -webkit-transform: translate(100px, 0);
+          transform: translate(100px, 0);
+}
+
 #footer {
   overflow: hidden;
   -webkit-box-sizing: border-box;
