@@ -44,8 +44,8 @@ p {
       height: 100%;
     }
   }
-  li:nth-child(2) article img,
-  li:nth-child(3) article img {
+  li:nth-child(2) .img-article img,
+  li:nth-child(3) .img-article img {
     left: 40%;
     top: 70%;
     min-width: 0;

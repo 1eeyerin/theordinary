@@ -87,15 +87,16 @@ p {
     padding: 20px;
     text-align: center;
     box-sizing: border-box;
+    &~.company-wrap {
+      margin-top: 50px;
+    }
   }
   .company-wrap {
     width: 100%;
     overflow: hidden;
-    &:first-of-type {
-      margin-top: 50px;
-      p {
-        padding-bottom: 0;
-      }
+    margin-top: 40px;
+    p {
+      padding-bottom: 0;
     }
     .company-img {
       box-sizing: border-box;
