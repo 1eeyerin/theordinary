@@ -215,13 +215,17 @@ $(document).ready(function() {
       }
     }
   }
-  //#section02 hover focus trigger
+  //메인 페이지 2,3번 섹션에 접근성을 부분 개선 시켜주었습니다.
+  //해당 셀렉터 안에 마우스엔터가 들어갔을때 클래스를 추가합니다
   $('.trigger li div').on('mouseenter', function() {
     $(this).parent().addClass('on');
   }).on('mouseleave', function() {
-    if ($(this).parent().hasClass('fix-on')) return false;
+  //해당 셀렉터에 마우스리브가 이루어지게 되면 클래스를 제거합니다
+  //다만 .fix-on이 있을 때에는 클래스를 제거시키지 않습니다.
+  if ($(this).parent().hasClass('fix-on')) return false;
     $(this).parent().removeClass('on');
   });
+  //포커스 부분 접근성 개선
   $('.trigger li div').on('focusin', function() {
     $(this).parent().addClass('on');
   }).on('focusout', function() {
