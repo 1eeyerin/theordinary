@@ -1,2 +1,2 @@
-portfolio.pdf
-http://ssence.kr/portfolio.pdf
+project end date:
+180705
